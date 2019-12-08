@@ -14,16 +14,16 @@ private:
 	std_msgs::String hello;
 	std::string topicname;
 private:
-	void helloCallback(const std_msgs::String data::ConstPtr& data);
+	void helloCallback(const std_msgs::String data data);
 };
 HelloSub::HelloSub() : nh("~")
 {
 	topicname = "/hello";
 	helloSub = nh.subscribe(topicname, 10, &HelloSub::helloCallback, this);
 }
-void HelloSub::helloCallback(const std_msgs::String::ConstPtr& data)
+void HelloSub::helloCallback(const std_msgs::String data)
 {
-	hello.data -> data.data;
+	hello.data = data.data;
 }
 void HelloSub::run()
 {
