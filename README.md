@@ -1,6 +1,7 @@
 # ros_hello
 ## ===== notice =====
-This is a "Hello World!" for ROS in Python
+This is a "Hello World!" for ROS in Python and C++
+> I made them both cross compatible (really easy tho) just in case
   
 ## ===== instruction =====
 1. Inside the directory ```hello_ws```, execute ```catkin_make```
