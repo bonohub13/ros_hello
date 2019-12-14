@@ -18,5 +18,5 @@ class Hello_Pub:
 if __name__ == "__main__":
     rospy.init_node('hello_pub')
     pub = rospy.Publisher('/hello', String, queue_size=10)
-    sub = Hello_Pub(publisher=pub)
-    sub.publish_msg()
+    pub = Hello_Pub(publisher=pub)
+    pub.publish_msg()
